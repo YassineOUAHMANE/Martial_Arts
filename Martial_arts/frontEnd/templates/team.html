@@ -1,0 +1,241 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Normalize -->
+    <link rel="stylesheet" href="{% static 'CSS/normalize.css' %}">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <title>Team</title>
+    <link rel="stylesheet" href="{% static 'CSS/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'CSS/team.css' %}">
+</head>
+<body>
+    <!-- Start Header -->
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">SenseiSphere</a>
+            <ul class="main-nav" id="main-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="SignUp.html">SignUp</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Landing -->
+    <section class="landing">
+        <div class="container">
+            <div class="text">
+                <h1>Meet The Team 🐐</h1>
+                <p>Here, you can explore the technologies we use and get in touch with the brilliant minds behind our project.</p>
+                <a href="#team" class="btn-glow">Get in Touch With YYY</a>
+            </div>
+            <div class="image">
+                <img src="{% static 'images/image.png' %}" alt="">
+            </div>
+        </div>
+        <a href="#skills" class="go-down">
+            <i class="fas fa-angle-double-down fa-2x"></i>
+        </a>
+    </section>
+    <!-- End Landing -->
+
+    <!-- Start Team -->
+    <section class="our-skills" id="skills">
+        <h2 class="main-title">Members</h2>
+        <div class="team-container">
+            <!-- Member 1 -->
+            <div class="team-member">
+                <img src="{% static 'images/Capoeira.png' %}" alt="Member 1">
+                <div class="skills">
+                    <h3>Yasser</h3>
+                    <div class="skill">
+                        <h4>HTML <span>80%</span></h4>
+                        <div class="progress"><span style="width: 80%;"></span></div>
+                    </div>
+                    <div class="skill">
+                        <h4>CSS <span>85%</span></h4>
+                        <div class="progress"><span style="width: 85%;"></span></div>
+                    </div>
+                    <div class="skill">
+                        <h4>JavaScript <span>70%</span></h4>
+                        <div class="progress"><span style="width: 70%;"></span></div>
+                    </div>
+                    <div class="skill">
+                        <h4>Python <span>80%</span></h4>
+                        <div class="progress"><span style="width: 80%;"></span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Member 2 -->
+            <div class="team-member">
+                <img src="{% static 'images/Taekwondo.png' %}" alt="Member 2">
+                <div class="skills">
+                    <h3>Yassine</h3>
+                    <div class="skill">
+                        <h4>gayness <span>80%</span></h4>
+                        <div class="progress"><span style="width: 80%;"></span></div>
+                    </div>
+                    <div class="skill">
+                        <h4>gayness <span>85%</span></h4>
+                        <div class="progress"><span style="width: 85%;"></span></div>
+                    </div>
+                    <div class="skill">
+                        <h4>gayness <span>70%</span></h4>
+                        <div class="progress"><span style="width: 70%;"></span></div>
+                    </div>
+                    <div class="skill">
+                        <h4>gayness <span>80%</span></h4>
+                        <div class="progress"><span style="width: 80%;"></span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Member 3 -->
+            <div class="team-member">
+                <img src="{% static 'images/Karate.png' %}" alt="Member 3">
+                <div class="skills">
+                    <h3>Youness</h3>
+                    <div class="skill">
+                        <h4>HTML <span>80%</span></h4>
+                        <div class="progress"><span style="width: 80%;"></span></div>
+                    </div>
+                    <div class="skill">
+                        <h4>CSS <span>85%</span></h4>
+                        <div class="progress"><span style="width: 85%;"></span></div>
+                    </div>
+                    <div class="skill">
+                        <h4>JavaScript <span>70%</span></h4>
+                        <div class="progress"><span style="width: 70%;"></span></div>
+                    </div>
+                    <div class="skill">
+                        <h4>Python <span>80%</span></h4>
+                        <div class="progress"><span style="width: 80%;"></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Team -->
+    <!-- Start Team Members -->
+    <section class="team" id="team">
+        <h2 class="main-title">Get In Touch</h2>
+        <div class="container">
+            <div class="box">
+                <div class="data">
+                    <img src="{% static 'images/Capoeira.png' %}" alt="">
+                    <div class="social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="info">
+                    <h3>Yasser</h3>
+                    <p>Simple Short Description</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="data">
+                    <img src="{% static 'images/image.png' %}" alt="">
+                    <div class="social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="info">
+                    <h3>Yassine</h3>
+                    <p>Simple Short Description</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="data">
+                    <img src="{% static 'images/Karate.png' %}" alt="">
+                    <div class="social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="info">
+                    <h3>Youness</h3>
+                    <p>Simple Short Description</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Team Members -->
+
+    <!-- Start Instagram -->
+    <section class="instagram-section">
+        <div class="instagram-header">
+            <h2>OUR INSTAGRAM</h2>
+            <hr />
+            <button class="instagram-button"><i class="fa-brands fa-instagram"></i>Follow on Instagram</button>
+        </div>
+        <div class="trial-offer">
+            <div class="trial-text">
+                <h3>START YOUR 3 DAYS FREE!</h3>
+                <p>ATTEND AS MANY CLASSES AS YOU WANT DURING YOUR TRIAL</p>
+            </div>
+            <button class="trial-button">
+                START TRAINING TODAY FOR FREE! <span>&gt;</span>
+            </button>
+        </div>
+    </section>
+    <!-- End Instagram -->
+
+    <!-- Start Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-about">
+                <h3>About SenseiSphere</h3>
+                <p>
+                SenseiSphere is dedicated to empowering individuals through martial arts. Join us to build strength, discipline, and confidence.
+                </p>
+            </div>
+        
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#programs">Programs</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </div>
+        
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Martial Arts Ave, Training City</p>
+                <p><i class="fas fa-phone-alt"></i> +1 234 567 890</p>
+                <p><i class="fas fa-envelope"></i> contact@senseisphere.com</p>
+            </div>
+        
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            </div>
+            <div class="footer-bottom">
+            <p>&copy; 2024 SenseiSphere. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <!-- End Footer -->
+</body>
+</html>
