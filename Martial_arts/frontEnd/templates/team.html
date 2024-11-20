@@ -1,15 +1,16 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Normalize -->
-    <link rel="stylesheet" href="../CSS/normalize.css">
+    <link rel="stylesheet" href="{% static 'CSS/normalize.css' %}">
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <title>Team</title>
-    <link rel="stylesheet" href="../CSS/styles.css">
-    <link rel="stylesheet" href="../CSS/team.css">
+    <link rel="stylesheet" href="{% static 'CSS/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'CSS/team.css' %}">
 </head>
 <body>
     <!-- Start Header -->
@@ -37,7 +38,7 @@
                 <a href="#team" class="btn-glow">Get in Touch With YYY</a>
             </div>
             <div class="image">
-                <img src="../images/image.png" alt="">
+                <img src="{% static 'images/image.png' %}" alt="">
             </div>
         </div>
         <a href="#skills" class="go-down">
@@ -52,7 +53,7 @@
         <div class="team-container">
             <!-- Member 1 -->
             <div class="team-member">
-                <img src="../images/Capoeira.png" alt="Member 1">
+                <img src="{% static 'images/Capoeira.png' %}" alt="Member 1">
                 <div class="skills">
                     <h3>Yasser</h3>
                     <div class="skill">
@@ -76,7 +77,7 @@
 
             <!-- Member 2 -->
             <div class="team-member">
-                <img src="../images/Taekwondo .png" alt="Member 2">
+                <img src="{% static 'images/Taekwondo.png' %}" alt="Member 2">
                 <div class="skills">
                     <h3>Yassine</h3>
                     <div class="skill">
@@ -100,7 +101,7 @@
 
             <!-- Member 3 -->
             <div class="team-member">
-                <img src="../images/Karate.png" alt="Member 3">
+                <img src="{% static 'images/Karate.png' %}" alt="Member 3">
                 <div class="skills">
                     <h3>Youness</h3>
                     <div class="skill">
@@ -124,14 +125,13 @@
         </div>
     </section>
     <!-- End Team -->
-
     <!-- Start Team Members -->
     <section class="team" id="team">
         <h2 class="main-title">Get In Touch</h2>
         <div class="container">
             <div class="box">
                 <div class="data">
-                    <img src="../images/Capoeira.png" alt="">
+                    <img src="{% static 'images/Capoeira.png' %}" alt="">
                     <div class="social">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
@@ -145,7 +145,7 @@
             </div>
             <div class="box">
                 <div class="data">
-                    <img src="../images/image.png" alt="">
+                    <img src="{% static 'images/image.png' %}" alt="">
                     <div class="social">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
@@ -159,7 +159,7 @@
             </div>
             <div class="box">
                 <div class="data">
-                    <img src="../images/Karate.png" alt="">
+                    <img src="{% static 'images/Karate.png' %}" alt="">
                     <div class="social">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>

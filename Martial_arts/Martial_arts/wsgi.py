@@ -1,5 +1,5 @@
 """
-WSGI config for Material_arts project.
+WSGI config for Martial_arts project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Material_arts.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Martial_arts.settings')
 
 application = get_wsgi_application()

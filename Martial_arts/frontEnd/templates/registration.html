@@ -1,36 +1,41 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atlas | Login</title>
-    <link rel="stylesheet" href="../CSS/sign.css">
-    <script src="https://kit.fontawesome.com/64d58efce2.js"
-    crossorigin="anonymous">
-    </script>
-    
+    <title>Atlas | Register</title>
+    <link rel="stylesheet" href="{% static 'CSS/sign.css' %}">
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="wrapper">
         <form method="post">
-            <h1>Login</h1>
+            <h1>Sign In</h1>
             <div class="input-box">
                 <input type="text" placeholder="Username" name="username" required>
                 <i class="fas fa-user"></i>
             </div>
             <div class="input-box">
+                <input type="email" placeholder="Email" name="email" required>
+                <i class="fa-regular fa-envelope-open"></i>
+            </div>
+            <div class="input-box">
                 <input type="password" placeholder="Password" name="password" required>
+                <i class="fas fa-lock"></i>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Password" name="re_password" required>
                 <i class="fas fa-lock"></i>
             </div>
             <div class="remember-forgot">
                 <label><input type="checkbox">Remember me</label>
-                <a href="#">Forgot password?</a>
             </div>
 
-            <button type="submit" class="btn">Login</button>
+            <button type="submit" class="btn">Sign In</button>
 
             <div class="register-link">
-                <p>Don't have an account? <a href="registeration.html">Register</a></p>
+                <p>Do have an account? <a href="{% static 'SignUp.html' %}">Login</a></p>
             </div>
         </form>
     </div>

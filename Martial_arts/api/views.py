@@ -1,7 +1,7 @@
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
-from django.shortcuts import get_object_or_404
+from django.shortcuts import get_object_or_404,render
 from .models import User, MartialArt, Movement, PracticeSession, ProgressHistory
 from .serializers import (
     UserSerializer,
@@ -10,7 +10,7 @@ from .serializers import (
     PracticeSessionSerializer,
     ProgressHistorySerializer,
 )
-from .movement_correction import load_reference_sequence, provide_real_time_feedback
+
 
 
 
@@ -79,7 +79,7 @@ class ProgressHistoryView(APIView):
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-
+'''
 
 class AnalyzeMovementView(APIView):
     def post(self, request):
@@ -129,3 +129,24 @@ class AnalyzeMovementView(APIView):
             },
             status=status.HTTP_201_CREATED,
         )
+'''
+def About(request):
+    return render(request, 'about.html')
+
+def Home(request):
+    return render(request, 'index.html')
+
+def Signup(request):
+    return render(request, 'SignUp.html')
+
+def Contact(request):
+    return render(request, 'contact.html')
+
+def Programs(request):
+    return render(request, 'programs.html')
+
+def Registration(request):
+    return render(request, 'registration.html')
+
+def Team(request):
+    return render(request, 'team.html')

@@ -5,7 +5,14 @@ from .views import (
     PracticeSessionView,
     UserView,
     ProgressHistoryView,
-    AnalyzeMovementView,
+    #AnalyzeMovementView,
+    About,
+    Home,
+    Signup,
+    Registration,
+    Contact,
+    Team,
+    Programs
 )
 
 urlpatterns = [
@@ -14,5 +21,12 @@ urlpatterns = [
     path("practice-sessions/", PracticeSessionView.as_view(), name="practice-sessions"),
     path("users/", UserView.as_view(), name="users"),
     path("progress-history/<int:user_id>/", ProgressHistoryView.as_view(), name="progress-history"),
-    path("analyze-movement/", AnalyzeMovementView.as_view(), name="analyze-movement"),  # New endpoint
+    #path("analyze-movement/", AnalyzeMovementView.as_view(), name="analyze-movement"),
+    path('about',About),
+    path('',Home),
+    path('login',Registration),
+    path('SignUp',Signup),
+    path('team',Team),
+    path('programs',Programs),
+    path('contact',Contact)
 ]

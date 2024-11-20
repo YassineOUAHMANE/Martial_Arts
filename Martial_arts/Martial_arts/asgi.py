@@ -1,5 +1,5 @@
 """
-ASGI config for Material_arts project.
+ASGI config for Martial_arts project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Material_arts.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Martial_arts.settings')
 
 application = get_asgi_application()

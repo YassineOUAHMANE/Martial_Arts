@@ -1,15 +1,16 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Normalize -->
-    <link rel="stylesheet" href="../CSS/normalize.css">
+    <link rel="stylesheet" href="{% static 'CSS/normalize.css' %}">
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <title>Programs</title>
-    <link rel="stylesheet" href="../CSS/styles.css">
-    <link rel="stylesheet" href="../CSS/programs.css">
+    <link rel="stylesheet" href="{% static 'CSS/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'CSS/programs.css' %}">
 </head>
 <body>
     <!-- Start Header -->
@@ -37,7 +38,7 @@
                 <a href="#" class="btn-glow">Begin Your Journey</a>
             </div>
             <div class="image">
-                <img src="../images/image.png" alt="">
+                <img src="{% static 'images/image.png' %}" alt="">
             </div>
         </div>
         <a href="#programs" class="go-down">
@@ -50,41 +51,41 @@
     <section class="programs" id="programs">
         <h2 class="main-title">Our Programs</h2>
         <div class="container">
-                <div class="program-card">
-                    <h3 class="title">Capoeira</h3>
-                    <img src="../images/Capoeira.png" alt="">
-                    <a href="Capoeira.html">Program Details</a>
-                </div>
-                <div class="program-card">
-                    <h3 class="title">Karate</h3>
-                    <img src="../images/Karate.png" alt="">
-                    <a href="Karate.html">Program Details</a>
-                </div>
-                <div class="program-card">
-                    <h3 class="title">Kickboxing</h3>
-                    <img src="../images/Kickboxing.png" alt="">
-                    <a href="Kickboxing.html">Program Details</a>
-                </div>
-                <div class="program-card">
-                    <h3 class="title">Kung Fu</h3>
-                    <img src="../images/Kung Fu.png" alt="">
-                    <a href="Kung Fu.html">Program Details</a>
-                </div>
-                <div class="program-card">
-                    <h3 class="title">Kyokushin Karate</h3>
-                    <img src="../images/Kyokushin Karate.png" alt="">
-                    <a href="Kyokushin Karate.html">Program Details</a>
-                </div>
-                <div class="program-card">
-                    <h3 class="title">Taekwondo</h3>
-                    <img src="../images/Taekwondo .png" alt="">
-                    <a href="Taekwondo.html">Program Details</a>
-                </div>
-                <div class="program-card">
-                    <h3 class="title">Tang Soo Do</h3>
-                    <img src="../images/Tang Soo Do.png" alt="">
-                    <a href="Tang Soo Do.html">Program Details</a>
-                </div>
+            <div class="program-card">
+                <h3 class="title">Capoeira</h3>
+                <img src="{% static 'images/Capoeira.png' %}" alt="">
+                <a href="Capoeira.html">Program Details</a>
+            </div>
+            <div class="program-card">
+                <h3 class="title">Karate</h3>
+                <img src="{% static 'images/Karate.png' %}" alt="">
+                <a href="Karate.html">Program Details</a>
+            </div>
+            <div class="program-card">
+                <h3 class="title">Kickboxing</h3>
+                <img src="{% static 'images/Kickboxing.png' %}" alt="">
+                <a href="Kickboxing.html">Program Details</a>
+            </div>
+            <div class="program-card">
+                <h3 class="title">Kung Fu</h3>
+                <img src="{% static 'images/Kung Fu.png' %}" alt="">
+                <a href="Kung Fu.html">Program Details</a>
+            </div>
+            <div class="program-card">
+                <h3 class="title">Kyokushin Karate</h3>
+                <img src="{% static 'images/Kyokushin Karate.png' %}" alt="">
+                <a href="Kyokushin Karate.html">Program Details</a>
+            </div>
+            <div class="program-card">
+                <h3 class="title">Taekwondo</h3>
+                <img src="{% static 'images/Taekwondo.png' %}" alt="">
+                <a href="Taekwondo.html">Program Details</a>
+            </div>
+            <div class="program-card">
+                <h3 class="title">Tang Soo Do</h3>
+                <img src="{% static 'images/Tang Soo Do.png' %}" alt="">
+                <a href="Tang Soo Do.html">Program Details</a>
+            </div>
         </div>
     </section>
     <!-- End Programs -->
@@ -114,18 +115,18 @@
             <div class="footer-about">
                 <h3>About SenseiSphere</h3>
                 <p>
-                SenseiSphere is dedicated to empowering individuals through martial arts. Join us to build strength, discipline, and confidence.
+                    SenseiSphere is dedicated to empowering individuals through martial arts. Join us to build strength, discipline, and confidence.
                 </p>
             </div>
         
             <div class="footer-links">
                 <h3>Quick Links</h3>
                 <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#programs">Programs</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#programs">Programs</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#faq">FAQ</a></li>
                 </ul>
             </div>
         
@@ -139,14 +140,14 @@
             <div class="footer-social">
                 <h3>Follow Us</h3>
                 <div class="social-icons">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
                 </div>
             </div>
-            </div>
-            <div class="footer-bottom">
+        </div>
+        <div class="footer-bottom">
             <p>&copy; 2024 SenseiSphere. All Rights Reserved.</p>
         </div>
     </footer>
